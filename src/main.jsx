@@ -20,7 +20,13 @@ const router = createBrowserRouter([
       {
         index:true,
         Component:Home,
-        loader:async( )
+       loader: async () => {
+          const res = await fetch("https://api.tvmaze.com/shows");
+          if (!res.ok) {
+            throw new Error("could not load the movie");
+          }
+          return res.json();
+          }
       },
       {
         path:"/Movie",
