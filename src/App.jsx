@@ -2,6 +2,6 @@
 
 export default function App() {
   return (
-    <div>Movie Explorer Home</div>
+    <div>Movie Explorer Home.</div>
   )
 }

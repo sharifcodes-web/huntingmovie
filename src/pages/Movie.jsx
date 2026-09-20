@@ -5,7 +5,7 @@ export default function Movie() {
   <>
   <h1>Hello Movie</h1>
   <Link to="/">
-  <button className="btn-success">Back to the Home </button>
+  <button className="btn-success">Back to the Home. </button>
   </Link>
   </>
   )

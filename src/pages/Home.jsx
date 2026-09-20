@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router";
 import MovieCard from "../components/MovieCard";
 import { useState } from "react";
+import Hero from "../components/Hero";
 
 
 export default function Home() {
@@ -14,8 +15,9 @@ export default function Home() {
 
   return (
     <>
-      <h1>Movie Library</h1>
-      <p>Browse the collection</p>
+       <Hero/>
+      <h1>Movie Library.</h1>
+      <p>Browse the collection.</p>
 
       <div className="row">
         <div className="col-fill col">
@@ -25,13 +27,13 @@ export default function Home() {
           />
         </div>
 
-        <div>
+        {/* <div>
           <select>
             <option value="">All</option>
             <option value="Scripted">Scripted</option>
             <option value="Reality">Reality</option>
           </select>
-        </div>
+        </div> */}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
