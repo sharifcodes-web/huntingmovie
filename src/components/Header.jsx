@@ -2,7 +2,7 @@ import { Link } from "react-router"
 
 export default function Header() {
   return (
-    <nav className="border border-6 fixed split-nav" style={{width:"auto"}}> 
+    <nav className="border-6 fixed split-nav" style={{width:"auto"}}> 
      <div className="nav-brand">
 
     <h3> <Link to={"/"}> Movie Explorer  </Link> </h3>
